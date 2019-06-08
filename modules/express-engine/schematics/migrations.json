@@ -1,0 +1,14 @@
+{
+  "schematics": {
+    "migration-v8-lazy-loading": {
+      "version": "8-beta",
+      "description": "Fixes issues with lazy loading and NgUniversal",
+      "factory": "./migrations/lazy-loading/index"
+    },
+    "migration-v8-bundle-dependencies": {
+      "version": "8-beta",
+      "description": "Fixes issues preventing use with Angular CLI's bundleDependencies mode",
+      "factory": "./migrations/bundle-dependencies/index"
+    }
+  }
+}

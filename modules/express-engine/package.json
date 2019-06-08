@@ -16,6 +16,7 @@
   },
   "schematics": "./schematics/collection.json",
   "ng-update": {
+    "migrations": "./schematics/migrations.json",
     "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
   },
   "repository": {

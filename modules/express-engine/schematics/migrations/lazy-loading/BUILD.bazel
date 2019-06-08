@@ -1,0 +1,16 @@
+load("//tools:defaults.bzl", "ts_library")
+
+ts_library(
+    name = "lazy-loading",
+    srcs = glob(["**/*.ts"]),
+    tsconfig = "//modules/express-engine/schematics:tsconfig.json",
+    visibility = [
+        "//modules/express-engine/schematics:__pkg__",
+        "//modules/express-engine/schematics/test:__pkg__",
+    ],
+    deps = [
+        "@npm//@angular-devkit/schematics",
+        "@npm//@types/node",
+        "@npm//typescript",
+    ],
+)
